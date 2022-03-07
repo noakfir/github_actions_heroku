@@ -12,11 +12,7 @@ jobs:
             repository: 'noakfir/python-getting-started'
        - uses: akhileshns/heroku-deploy@v3.12.12
          with:
-            heroku_api_key: "89cb32b3-37e8-4ef3-932b-11b685a138d9"
-            heroku_app_name: "still-caverns-55204" 
-            heroku_email: "noa.kfir@aquant.io"
-         
-        
-
-
-  
+           heroku_api_key: "89cb32b3-37e8-4ef3-932b-11b685a138d9"
+           heroku_app_name: "still-caverns-55204" 
+           heroku_email: "noa.kfir@aquant.io"
+      
