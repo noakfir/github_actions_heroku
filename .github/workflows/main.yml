@@ -8,19 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
        - uses: actions/checkout@v2
+         with:
+            repository: 'noakfir/python-getting-started'
        - uses: akhileshns/heroku-deploy@v3.12.12
          with:
             heroku_api_key: "89cb32b3-37e8-4ef3-932b-11b685a138d9"
-            heroku_app_name: "github-actions-testing-noa" 
+            heroku_app_name: "still-caverns-55204" 
             heroku_email: "noa.kfir@aquant.io"
-       - name: set up python
-         uses: actions/setup-python@v2
-       - name: Install dependencies
-         run: |
-            python -m pip install --upgrade pip
-            pip install pandas
-       - name: run code
-         run: python source/code.py  
+         
         
   
 
